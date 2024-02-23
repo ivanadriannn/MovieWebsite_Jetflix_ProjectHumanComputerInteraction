@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    transition: .3s;
+}
+
+.header{
+    background: #003B4E;
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+}
+
+body{
+    background-image: url(../asset/Fast\ X.jpg);
+    background-size: 100vw;
+    background-attachment: fixed;
+    overflow-x: hidden; 
+}
+ 
+section{
+    margin:0 auto;
+    padding:10px;
+}
+ 
+header .area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+header .logo{
+    font-family: 'Lobster';
+    font-weight: 200;
+    margin-left: 15px;
+    font-size: 3vw;
+    color:#ffffff;
+ }
+ 
+.category{
+    display: none;
+}
+ 
+.navbar ul a.btn{
+    color: #ffffff;
+}
+
+.navbar ul a.btn:hover{
+    color: #CC9544;
+}
+ 
+header .navbar a{
+    padding: 0px 1vw 0px 10px;
+    margin-left: 25px;
+    color:#bbbbbb;
+    font-size: 30px;
+}
+ 
+.navbar a:hover{
+    color:#CC9544;
+}
+
+.signup{
+    padding-top: 15vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
+    
+}
+
+.area-signup{
+    display: flex;
+    flex-direction: column;
+    background: rgba(80, 69, 69, 0.5);
+    border: 5px solid #BBBBBB;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;    
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+}
+
+.input span{
+    padding-bottom: 1vw;
+    color: red;
+}
+
+.err{
+    padding-left: 1.5vw;
+}
+
+.err span{
+    color: red;
+}
+
+.area-signup h2{
+    text-align: center;
+    color: #CC9544;
+    padding-top: 5vw;
+    padding-bottom: 4vw;
+    font-size: 5vw;
+}
+
+.myform{
+    padding-left: 14vw;
+    font-size: 2vw;
+    color: #ffffff;
+    padding-bottom: 1vw;
+}
+
+input[type=text]{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    padding-left: 1vw;
+    box-sizing: border-box;
+    width: 58vw;
+    height: 3.5vw;
+    background: #FF9900;
+    border: 2px solid #FFFFFF;
+    resize: none;
+}
+
+textarea{
+    padding-left: 1vw;
+    width: 57vw;
+    height: 10vw;
+    background: #FF9900;
+    border: 2px solid #FFFFFF;
+    resize: none;
+}
+
+input[type=radio]{
+    color: #FF9900;
+    width: 1.5vw;
+    height: 1.5vw;
+    accent-color: grey;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.male{
+    padding-right: 3vw;
+}
+
+.female{
+    padding-left: .7vw;
+}
+
+.area-gender{
+    display: flex;
+}
+
+textarea{
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    height: 20vw;
+}
+
+.input2{
+    padding-bottom: 1vw;
+}
+
+input[type=date] {
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    padding-left: 1vw;
+    box-sizing: border-box;
+    width: 58vw;
+    height: 3.5vw;
+    background: #FF9900;
+    border: 2px solid #FFFFFF;
+    resize: none;
+}
+
+input[type=checkbox]{
+    width: 1.5vw;
+    height: 1.5vw;
+    border-radius: 10px;
+    color: #BBBBBB;
+    accent-color: grey;
+    padding-bottom: 1vw;
+}
+
+label[for=age] span{
+    padding-left: 2vw;
+}
+
+label[for=agreement] span{
+    padding-left: 2vw;
+}
+
+label[for=agreement] span.beda{
+    padding-left: 0;
+    color: #85B6FF;
+}
+
+label[for=agreement] span.beda:hover{
+    color: #A2ADBC;
+    cursor: pointer;
+}
+
+.area-submit{
+    padding-left: 37vw;
+    padding-bottom: 3vw;
+}
+
+button{
+    font-family: 'poppins';
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+    color: white;
+    width: 15vw;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #FF9900;
+}
+
+button:hover{
+    color: #BBBBBB;
+    background-color: #a77509;
+}
+
+.area-login h2{ 
+    padding: 0 0vw 5vw 3vw;
+    font-size: 3vw;
+    color: #FFFFFF;
+}
+
+.area-login a{ 
+    font-size: 3vw;
+    color: #85B6FF;
+}
+
+.area-login a:hover{
+    color: #A2ADBC;
+    cursor: pointer;
+}
+
+.area-footer{
+    padding-top: 18vw;
+}
+
+.footer{
+    background: #003B4E;
+    backdrop-filter: blur(10px);
+    padding-top: 3vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+.footer h2{
+    color: #ffffff;
+    padding-bottom: 1.5vw;
+    font-size: 3vw;
+}
+ 
+.sosmed{
+    padding-bottom: 2vw;
+}
+
+.sosmed a{
+    margin: 1vw;
+    font-size: 2vw;
+    width: 4vw;
+    height: 3vw;
+    padding-top: 1vw;
+    border-radius: 50%;
+    color: #ffffff;
+    background: rgba(13, 12, 12, 0.45);
+}
+ 
+.sosmed a:hover{
+    color: #000000;
+    background-color: #BBBBBB;
+}
+ 
+ .credit{
+    background: rgba(217, 217, 217, 0.31);
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    padding-top: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+@media screen and (max-width: 768px){
+    header .logo{
+       font-size: 30px;
+       z-index: 1;
+    }
+
+    header .navbar a{
+        font-size: 24px;
+    }
+ 
+    .navbar ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        height: 200px;
+        top: 58px;
+        right: 0px;
+        padding: 50px;
+        background-color: rgba(217, 217, 217, 0.26);
+        backdrop-filter: blur(10px);
+  
+        transform: translateX(100%);
+        transition: all 0.4s;
+    }
+ 
+    header .navbar a{
+        font-size: 30px;
+        padding-bottom: 15px;
+    }
+
+    .navbar ul a.btn{
+       color: #ffffff;
+    }
+ 
+    .navbar ul a.btn:hover{
+       color: #CC9544;
+    }
+
+    .navbar ul.muncul{
+        transform: translateX(0);
+        background-color: #4b4f52de;
+    }
+    
+    .category{
+        display: flex;
+        flex-direction: column;
+        height: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+
+    .category input{
+        position: absolute;
+        width: 22px;
+        height: 28px;
+        top: -5px;
+        left: -1px;
+        opacity: 0.0;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .category span{
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        transition: 0.4s;
+    }
+
+    .signup{
+        padding-top: 20vw;
+    }
+
+    input{
+        font-size: 2vw;
+    }
+
+    label{
+        font-size: 3vw;
+    }
+
+    .male{
+        font-size: 3vw;
+    }
+
+    .female{
+        font-size: 3vw;
+    }
+
+    .input span{
+        font-size: 3vw;
+    }
+
+    .sosmed a{
+        font-size: 4vw;
+        width: 7vw;
+        height: 6vw;
+        padding-top: 2vw;
+     }
+     
+    .credit{
+        font-size: 3vw;
+    }
+
+    .signup.muncul{
+        opacity: 0.3;
+    }
+    .area-footer.muncul{
+        opacity: 0.3;
+    }
+ }

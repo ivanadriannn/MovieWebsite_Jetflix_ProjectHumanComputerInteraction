@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jetfix</title>
+    <link rel="icon" href="../asset/icon.jpg" type="icon">
+    <link rel="stylesheet" href="../css/sign-in.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <section class="area">
+            <a href="/html/home.html" class="logo">Jetflix</a>
+            <div class="navbar">
+                <ul class="">
+                    <a href="/html/home.html">Home</a>                       
+                </ul>      
+            </div>  
+        </section>
+    </header>
+
+    <form name="signinform" class="signin" action="./home1.html" onsubmit="return validate()">
+        <div class="area-signin">
+            <h2>Sign In Form</h2>
+            <div class="myform">
+                <div class="input">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="email">  
+                    <span id="errorEmail"></span>                  
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input id="password" type="text" name="password">  
+                    <span id="errorPassword"></span>                  
+                </div>
+            </div>
+            <div class="area-submit">
+                <button id="submit" type="submit">Confirm</button>     
+            </div>
+            <div class="area-login">
+                <h2>New at Jetfix? <a href="sign-up.html">Sign Up</a></h2>
+            </div>
+        </div>
+    </form>
+
+    <div class="area-footer">
+        <div class="footer">
+            <h2>Follow Us</h2>
+            <div class="sosmed">
+                <a href="https://www.facebook.com/" class="fab fa-facebook-f"></a>
+                <a href="https://www.twitter.com/" class="fab fa-twitter"></a>
+                <a href="https://www.youtube.com/" class="fab fa-youtube"></a>
+                <a href="https://www.instagram.com/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/" class="fab fa-linkedin"></a>
+            </div>
+            <div class="credit">
+                Copyright &copy;  2023 by Jetflix - All Rights Reserved!
+            </div>
+        </div>    
+    </div>
+
+    <script src="../js/sign-in.js"></script>
+</body>
+</html>

@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lobster&display=swap');
+ 
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    transition: .3s;
+}
+
+.header{
+    background: #003B4E;
+    position: fixed;
+    top:0; left:0; right:0;
+    z-index: 10;
+}
+
+body{
+    background-image: url("../asset/Fast X.jpg");
+    background-size: 100vw;
+    background-attachment: fixed;
+    overflow-x: hidden; 
+    backdrop-filter: brightness(0.5);
+    backdrop-filter: blur(8px);
+}
+ 
+section{
+    margin:0 auto;
+    padding:10px;
+}
+ 
+header .area{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ 
+header .logo{
+    font-family: 'Lobster';
+    font-weight: 200;
+    margin-left: 15px;
+    font-size: 3vw;
+    color:#ffffff;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.home .tulisan{
+    display: flex;
+    flex-direction: column; 
+    padding-top: 20vw;
+    padding-left: 5vw;
+}
+
+.home .tulisan h1{
+    color:#ffffff;
+    font-size: 5vw;
+}
+
+.home .tulisan p{
+    color: #ffffff;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+}
+
+.button-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.my-button{
+    font-family: 'poppins';
+    background-color: #FF9900;
+    color: white;
+    padding: 5px 15px;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.my-button1{
+    font-family: 'poppins';
+    background-color: #FF9900;
+    color: white;
+    padding: 10px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    width: 220px;
+    border-radius: 20px;
+}
+
+.my-button:hover{
+    background-color: #a77509;
+}
+
+.my-button1:hover{
+    background-color: #a77509;
+}
+
+.area-footer{
+    padding-top: 20vw;
+}
+
+.footer{
+    background: #003B4E;
+    backdrop-filter: blur(10px);
+    padding-top: 3vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+.footer h2{
+    color: #ffffff;
+    padding-bottom: 1.5vw;
+    font-size: 3vw;
+}
+ 
+.sosmed{
+    padding-bottom: 2vw;
+}
+
+.sosmed a{
+    margin: 1vw;
+    font-size: 2vw;
+    width: 4vw;
+    height: 3vw;
+    padding-top: 1vw;
+    border-radius: 50%;
+    color: #ffffff;
+    background: rgba(13, 12, 12, 0.45);
+}
+ 
+.sosmed a:hover{
+    color: #000000;
+    background-color: #BBBBBB;
+}
+ 
+.credit{
+    background: rgba(217, 217, 217, 0.31);
+    width: 100vw;
+    backdrop-filter: blur(10px);
+    padding-top: 2vw;
+    font-size: 1.5vw;
+    color: white;
+    padding-bottom: 1vw;
+}
+
+.credit ul a.btn{
+    color: white;
+}
+
+.credit ul a.btn:hover{
+    color: #CC9544;
+}
+
+@media screen and (max-width: 1000px){
+    header .navbar a{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .logo{
+       font-size: 30px;
+       z-index: 1;
+    }
+
+    .home{
+        padding-left: 0;
+    }
+    
+    .home .tulisan{ 
+        padding-top: 25vw;
+    }
+    
+    .home .tulisan h1{
+        font-size: 8vw;
+    }
+    
+    .home .tulisan p{
+        font-size: 4vw;
+    }
+    
+    .my-button1{
+        padding: 10px 10px;
+        font-size: 20px;
+        width: 120px;
+    }
+
+    .sosmed a{
+        font-size: 4vw;
+        width: 7vw;
+        height: 6vw;
+        padding-top: 2vw;
+     }
+     
+    .credit{
+        font-size: 3vw;
+    }
+
+    .home.muncul{
+        opacity: 0.3;
+    }
+
+    .area-footer.muncul{
+        opacity: 0.3;
+    }
+ }
+
+ @media screen and (max-width: 300px){
+    .home{
+        padding-left: 0;
+    }
+    
+    .home .tulisan{ 
+        padding-top: 25vw;
+    }
+    
+    .home .tulisan h1{
+        font-size: 5vw;
+    }
+    
+    .home .tulisan p{
+        font-size: 4vw;
+    }
+
+    .my-button1{
+        padding: 5px 5px;
+        font-size: 15px;
+        width: 120px;
+    }
+}
